@@ -1,0 +1,52 @@
+.collective {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--background-collective);
+    @media screen and(min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.collective-cards {
+    margin-bottom: -30px;
+    margin-left: -30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc(100% / 2 - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 4 - 30px);
+    }
+}
+
+.collective-cards__card {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    max-width: 450px;
+    background-color: var(--background-collective-color);
+    padding-bottom: 24px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+    }
+    @media screen and(min-width: 1200px) {
+        max-width: 270px;
+    }
+}
+
+.collective-cards__worker-name {
+    margin-top: 30px;
+    text-align: center;
+    @include font (500, 16px, 1.18, 0.03em);
+}
+
+.collective-cards__worker-position {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-align: center;
+    @include font (normal, 16px, 1.18, 0.03em);
+    color: var(--font-two-color);
+}

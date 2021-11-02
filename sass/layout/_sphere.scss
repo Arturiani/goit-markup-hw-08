@@ -1,0 +1,34 @@
+.sphere-section {
+    padding-bottom: 94px;
+    @media screen and (min-width: 0px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.spheres {
+    display: flex;
+}
+
+.sphere:not(:last-child) {
+    margin-right: 30px;
+}
+
+.sphere-wrapper {
+    position: relative;
+}
+
+.sphere-titel {
+    @include font (bold, 14px, 1.14, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--font-hero-btn);
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
