@@ -56,6 +56,9 @@
 
 .footer-contakts-wrap {
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+    }
     // margin-right: 165px;
 }
 
@@ -92,6 +95,9 @@
     color: var(--footer-logo-color);
     margin-bottom: 20px;
     margin-top: 15px;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .social-list__icon_svg-white {
@@ -117,6 +123,7 @@
     }
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
+        align-items: flex-start;
     }
 }
 

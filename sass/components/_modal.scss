@@ -105,10 +105,13 @@
 }
 
 .modal-check-text {
-    @include font (normal, 14px, 1.71, 0.03em);
+    @include font (normal, 12px, 1.71, 0.03em);
     color: var(--font-two-color);
     @extend %flex-center;
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
     & span {
         width: 16px;
         height: 15px;
