@@ -23,6 +23,7 @@
 }
 
 .cards-info {
+    flex-grow: 1;
     padding-top: 20px;
     padding-left: 24px;
     padding-right: 24px;
@@ -36,6 +37,7 @@
     margin-bottom: 30px;
     margin-left: 30px;
     width: 450px;
+    height: 100%;
     // margin-right: 30px;
     // margin-bottom: 30px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,6 +60,8 @@
 }
 
 .card-a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
 }
 
